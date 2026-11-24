@@ -42,8 +42,8 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
-    "start": "react-app-rewired start",
-    "build": "rm -rf dist && webpack --config webpack.config.js",
+    "start": "node init && react-app-rewired start",
+    "build": "node init && rm -rf dist && webpack --config webpack.config.js",
     "watch": "webpack -w --config webpack.config.js",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
